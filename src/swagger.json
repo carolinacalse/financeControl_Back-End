@@ -1,0 +1,49 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Documentation",
+    "description": "This is an API Rent",
+    "version": "1.0.0",
+    "contact": {
+      "email": "carolina.calse@mosb.com.br"
+    }
+  },
+  "paths": {
+    "/appointmente": {
+      "post": {
+        "tags": ["Appointmente"],
+        "summary": "Create a Appointmente",
+         "description": "Create a new Appointmente",
+         "requestBody": {
+           "content": {
+             "application/json": {
+               "schema": {
+                 "type": "object",
+                 "properties": {
+                   "docNum": {
+                     "type": "string"
+                   },
+                   "op": {
+                     "type": "string"
+                   }
+                 },
+                 "example": {
+                   "docNum": "Appointmente name sample",
+                   "op": "Appointmente description sample"
+                 }
+               }
+             }
+           }
+         },
+         "responses": {
+           "201": {
+             "description": "Created"
+           },
+           "500": {
+             "description": "Category already exists"
+           }
+         }
+      }
+    }
+  }
+}
