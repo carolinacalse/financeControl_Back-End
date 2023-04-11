@@ -11,9 +11,9 @@
   "paths": {
     "/appointmente": {
       "post": {
-        "tags": ["Appointmente"],
-        "summary": "Create a Appointmente",
-         "description": "Create a new Appointmente",
+        "tags": ["Expense"],
+        "summary": "Create a Expense",
+         "description": "Create a new Expense",
          "requestBody": {
            "content": {
              "application/json": {
@@ -28,8 +28,8 @@
                    }
                  },
                  "example": {
-                   "docNum": "Appointmente name sample",
-                   "op": "Appointmente description sample"
+                   "docNum": "Expense name sample",
+                   "op": "Expense description sample"
                  }
                }
              }

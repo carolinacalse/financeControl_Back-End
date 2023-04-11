@@ -1,56 +1,11 @@
 import {Router} from "express";
-import { appointmenteRoutes } from "./appointmente.routes";
 import { authenticateRoutes } from "./authenticate.routes";
-import { typeDefectRoutes } from "./typeDefect.routes";
 import { usersRoutes } from "./users.routes";
-import {typeAppointmenteRoutes} from "./typeAppointmente.routes";
-import {typeDispositionRoutes} from "./typeDisposition.routes";
-import { classificationDefectRoutes } from "./classificationDefect.routes";
-import { typeLocalRoutes } from "./typeLocal.routes";
-import { notConformRoutes } from "./notConform.routes";
-import { typeCriterionRoutes } from "./typeCriterion.routes";
-import { typeResolutionRoutes } from "./typeResolution.routes";
-import { typeRangeUseRoutes } from "./typeRangeUse.routes";
-import { instrumentRoutes } from "./instrument.routes";
-import { criterionRoutes } from "./criterion.routes";
-import { typeFrequencyRoutes } from "./typeFrequency.routes";
-import { typeModelRoutes } from "./typeModel.routes";
-import { typeDeviceRoutes } from "./typeDevice.routes";
-import { typeCalibrationRoutes } from "./typeCalibration.routes";
-import { typeAlertRoutes } from "./typeAlert.routes";
-import { typeActionRoutes } from "./typeAction.routes";
-import { typeDeviceOrModelRoutes } from "./typeDeviceOrModel.routes";
-import { typeImagesRoutes } from "./typeImages.routes";
-import { reportRoutes } from "./report.routes";
-import { typeCalibrationCriterionRoutes } from "./typeCalibrationCriterion.routes";
-import { processAlertRoutes } from "./processAlert.routes";
+import { typeExpenseRoutes } from "./typeExpense.routes";
 
 const router = Router();
-
-router.use("/appointmente", appointmenteRoutes);
-router.use("/notConform", notConformRoutes);
-router.use("/typeDefect", typeDefectRoutes);
-router.use("/classificationDefect", classificationDefectRoutes);
-router.use("/typeAppointmente", typeAppointmenteRoutes);
-router.use("/typeDisposition", typeDispositionRoutes);
-router.use("/typeLocal", typeLocalRoutes);
 router.use("/users", usersRoutes);
-router.use("/typeFrequency", typeFrequencyRoutes);
-router.use("/typeCriterion", typeCriterionRoutes);
-router.use("/typeResolution", typeResolutionRoutes);
-router.use("/typeRangeUse", typeRangeUseRoutes);
-router.use("/instrument", instrumentRoutes);
-router.use("/criterion", criterionRoutes);
-router.use("/typeModel", typeModelRoutes);
-router.use("/typeDevice", typeDeviceRoutes);
-router.use("/typeCalibration", typeCalibrationRoutes);
-router.use("/typeAlert", typeAlertRoutes);
-router.use("/typeAction", typeActionRoutes);
-router.use("/typeDeviceOrModel", typeDeviceOrModelRoutes);
-router.use("/typeImages", typeImagesRoutes);
-router.use("/reports", reportRoutes);
-router.use("/typeCalibrationCriterion", typeCalibrationCriterionRoutes);
-router.use("/procAlert", processAlertRoutes);
+router.use("/typeExpense", typeExpenseRoutes);
 router.use(authenticateRoutes)
 
 export {router};
